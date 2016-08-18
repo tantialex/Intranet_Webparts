@@ -1,0 +1,45 @@
+<html>
+	<head>			
+		<link href="http://mentintranet/SiteAssets/Webparts/Css/cssStyleSheet.css" rel="stylesheet" type="text/css">
+		<script src="http://mentintranet/SiteAssets/Webparts/Javascript/card_switch.js"></script>
+		<script src="http://mentintranet/SiteAssets/Webparts/Javascript/description_editor.js"></script>
+		<script src="http://mentintranet/SiteAssets/Webparts/Javascript/ajax_calls.js"></script>
+	</head>
+	<body>
+		<div id="xslAnnouncements" class="webpart">
+			<div class="slm-layout-main" >         	                    
+				<div class="groupheader item medium">
+					<h2 class="groupheader_child title">Announcements</h2>
+					<div class="groupheader_child button_wrapper">
+						<img class="nav_button" src="http://mentintranet/SiteAssets/Webparts/RssFeed/rss_nav_button_left.png" alt="Previous Button" onclick="SwitchCard('previous', 'xslAnnouncements')"></img>
+						<img class="nav_button" src="http://mentintranet/SiteAssets/Webparts/RssFeed/rss_nav_button_right.png" alt="Previous Button" onclick="SwitchCard('next', 'xslAnnouncements')"></img>						
+					</div>
+				</div>			
+				<div class="card_display display">           
+					<img class="card_background" src="http://mentintranet/SiteAssets/Webparts/RssFeed/me_logo.png" alt="Card Background"></img>  
+					<div class="link-item card_layout" style="opacity:0">
+						<div class="card_title"> 
+							<h2 class="title" style="float:left; text-align:left;">Title</h2> 
+							<h2 class="date" style="float:right; text-align:right;">20:20 January</h2>		
+							<hr style="clear:both"></hr>
+						</div>				
+						<div class="description_wrapper">
+							<div class="description">
+								<div class="card_image">
+									<p><img src="">
+									</p>
+								</div>
+								<div class="card_description">
+								</div>
+							</div>						
+						</div>
+						<div class="redirect">
+							<a href="http://mentintranet/Lists/Announcements/AllItems.aspx" target="_blank">All Announcements</a>
+						</div>
+						<br style="clear:both"></br>
+					</div>							
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

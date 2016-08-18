@@ -1,0 +1,67 @@
+<html>
+	<head>			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://mentintranet/SiteAssets/Webparts/Javascript/ticket_switch.js"></script>
+	</head>
+	<body>
+		<div id="webpartTickets" class="webpart">
+			<div class="slm-layout-main" data-current="cards">                         
+				<div class="groupheader item medium">
+					<h2 class="groupheader_child title">Got a problem? Send a ticket.</h2>
+					<div class="groupheader_child button_wrapper" style="text-align:right;">
+						<img class="nav_button" src="http://mentintranet/SiteAssets/Webparts/Tickets/nav_button_cards.png" alt="Add Button" onclick="changeViewTickets()"></img>						
+					</div>
+				</div>			
+				<div class="content_wrapper" style="position:relative; width:100%; height:280px;">
+				<img class="card_background" src="http://mentintranet/SiteAssets/Webparts/Tickets/me_logo.png" alt="Card Background"></img>
+					<div class="ticket_display display" style="position:absolute;">										  
+						<div class="link-item card_layout">
+							<div class="card_status">
+							</div>
+							<div class="card_info" style="">
+								<div class="card_title">
+									<b style="position:absolute; width:300px;">Click on the '<span style="font-size:20px"> + </span>' to fill in a ticket.</b>
+								</div>						
+							</div>	
+							<div class="time_wrapper">								
+							</div>
+							<hr style="clear:both"></hr>
+						</div>			
+					</div>
+					<div class="ticket_submit display"  style="position:absolute;">
+						<div class="container">
+							<div class="row">
+								<div class="title" style="float:left; text-align:left;">
+									Title<br>
+									<input class="input_title" type="text" maxlength="24" name="title" style="width:175px; height:22px;">
+								</div>
+								<div class="category" style="float:right; text-align:right;">
+									Category<br>
+									<select class="input_category" style="text-align:right; width:175px; height:28px;">
+										<option value="Technical">Technical</option>
+										<option value="Email">Email</option>
+										<option value="Internet">Internet</option>
+										<option value="General">General</option>
+									</select>
+								</div>
+								<br style="clear:both;">
+							</div>
+							<div class="row">
+								<div class="body" style="float:left; text-align:left;">
+									Body<br>
+									<textarea class="input_body" type="text" name="body" maxlength="250" rows="6" style="width:420px; height80px; resize: none;"></textarea>
+								</div>
+								<br style="clear:both;">
+							</div>
+							<div class="send" style="float:left; text-align:left; width:100%">
+								<button type="button" name="send" onclick="addTicket(); changeViewTickets()">Send</button>
+							</div>
+							<br style="clear:both;">
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

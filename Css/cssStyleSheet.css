@@ -1,0 +1,256 @@
+.webpart{
+    font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    border:1px black solid;
+    color:black;
+	overflow:hidden;
+}
+.webpart .card_display{
+	height:170px;
+}
+.webpart .display{
+	opacity:0;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+.webpart .card_background{
+	position:absolute;	
+	opacity:0.15;
+	height:160px;
+	width:160px;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.webpart .groupheader{
+	position:relative;
+    width:inherit;
+    background-color:#0072C6;
+    margin-bottom:0px;
+}
+.webpart .groupheader .groupheader_child{
+	display:inline-block;
+}
+.webpart .groupheader .button_wrapper{
+	float:right;
+	margin-right:20px;
+}
+.webpart .groupheader .nav_button{
+	height:26px;
+	width:26px;	
+	display:inline;
+	margin-left:5px;
+	cursor: pointer;
+	vertical-align:text-bottom;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.webpart .groupheader .nav_button:hover{
+	background:#005999;
+	transform: scale(1.3);
+}
+.webpart .groupheader .title{
+    margin-left:10px;
+    color:white;
+    letter-spacing: 1px;
+}
+.webpart .card_display .card_layout{
+	position: absolute;
+    border: 1px  #e6e6e6 solid;
+    width:inherit;
+    height:170px;
+    background-color:white;
+    padding-bottom:10px;
+}
+.webpart .card_display .card_layout .description_wrapper{
+	position:relative;
+	padding-top:5px;
+	width:inherit;
+	height:auto;
+}
+.webpart .card_display .card_layout .description_wrapper .description{
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-left:10px;
+	width:inherit;
+	height:inherit;
+}
+.webpart .card_display .card_layout .description_wrapper .description .card_image{
+	position:relative;
+	width:100px;
+	height:100px;
+	display:inline-block;
+	padding-left:10px;
+	float:left;
+}
+.webpart .card_display .card_layout .description_wrapper .description .card_image > p{
+	width:100%;
+	height:inherit;
+	margin: 10px 0px;
+}
+.webpart .card_display .card_layout .description_wrapper .description .card_image >p > img{
+	width:100px;
+	height:100px;
+	border:2px #8c8c8c solid;
+}
+.webpart .card_display .card_layout .description_wrapper .description .card_description{
+	font-size:13px;
+	position:relative;
+	width:65%;
+	height:80%;
+	display:inline-block;
+	float:left;
+	padding-top:10px;
+	padding-left:25px;
+	overflow:hidden;
+	text-align:justify;
+}
+.webpart .card_display .card_layout .redirect{
+	position:relative;
+	display:inline-block;
+	width:65%;	
+	padding-top:10px;
+	padding-left:25px;
+}
+.webpart .card_display .card_layout .card_title{
+	background: rgba(0, 0, 0,0.1);
+	position:relative;
+	width:100%;	
+}
+.webpart .card_display .card_layout .card_title > h2{
+	color:#0072C6;
+    margin-left:10px;
+	font-weight:bold;
+    font-size:14px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#xslAnnouncements .card_layout .card_title .date{ 
+	margin-right: 20px;
+}
+#xslAnnouncements .card_layout .card_image img{
+	border:0px;
+}
+#xslAnnouncements .card_layout .redirect{
+	position:absolute;
+	bottom:20px;
+	right:10px;
+	text-align:right;
+}
+#webpartTickets{
+	width:471px;
+}
+#webpartTickets .groupheader .nav_button{
+	margin-right:30px;
+	border-radius:100%;
+}
+#webpartTickets .content_wrapper{
+	height:280px;
+}
+#webpartTickets .ticket_display{
+	height:280px;
+	position:absolute;
+}
+#webpartTickets .ticket_submit{
+	height:280px;
+	position:absolute;
+	display:none;
+}
+#webpartTickets .ticket_display .card_layout{
+	position: relative;
+    border-top: 1px  #e6e6e6 solid;
+    width:inherit;
+    height:70px;
+    background-color:white;
+}
+#webpartTickets .ticket_display .card_layout .card_data_container{
+	position:absolute;
+	margin-top:auto;
+	margin-bottom:auto;
+	height:auto;
+	width:100%;
+}
+#webpartTickets .ticket_display .card_layout .card_info{	
+	float:left;
+	position: relative;
+    width:50%;
+    height:inherit;
+	margin-left:20px;
+	
+}
+#webpartTickets .ticket_display .card_layout .card_info .card_title{
+	padding-top:25px;
+	color:#0072C6;
+	font-size:14px;
+}
+#webpartTickets .ticket_display .card_layout .card_status{
+	float:left;
+	position: relative;
+	margin-top:15px;
+	margin-left:15px;
+}
+#webpartTickets .ticket_display .card_layout .status_button{
+	width:80px;
+	height:40px;
+	font-size:12px;
+	background-color: white;
+    color: black;
+	border-radius:4px;
+}
+#webpartTickets .ticket_display .card_layout .Complete{
+	border:2px solid rgb(159, 255, 128);
+	/**background-color: rgba(159, 255, 128,0.01);*/
+}
+#webpartTickets .ticket_display .card_layout .Fixing{
+	border:2px solid rgb(255, 133, 102);
+	/**background-color: rgba(255, 133, 102,0.01);*/
+}
+#webpartTickets .ticket_display .card_layout .Pending{
+	border:2px solid rgb(255, 204, 102);
+	/**background-color: rgba(255, 204, 102,0.01);*/
+}
+#webpartTickets .ticket_display .card_layout .time_wrapper{
+	position:absolute;
+	right:0px;
+	margin-right:20px;
+	color:#8c8c8c;
+	top:50%;
+	transform: translateY(-50%);
+}
+#webpartTickets .ticket_submit .container{
+	position:relative;
+	height:260px;
+	padding:10px 20px;
+	color:#0072C6;
+}
+#webpartTickets .ticket_submit .row{
+	display:block;
+	position:relative;
+	padding-top:5px;
+	padding-bottom:10px;
+	width:100%;
+}
+#webpartTickets .ticket_submit button{
+	position:absolute;
+	width:80%;
+	height:40px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	color:white;	
+	cursor: pointer;
+	background-color:#0072C6;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+#webpartTickets .ticket_submit button:hover{
+	font-size:14px;
+	font-weight:bold;
+	color:#0072C6;
+	border:2px solid #0072C6;
+	background-color:#ffffff;	
+}
